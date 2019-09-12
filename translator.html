@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Lukes VaporWave Translator
+    </title>
+</head>
+
+<body style="text-align: center;">
+
+    <h1 style="color: deeppink;">
+        Lukes VaporWave Translator
+    </h1>
+
+    <h3>
+        Definitely Still a Work In Progress
+    </h3>
+
+    <form id="transForm">
+        <label for="toTranslate"> To Be Translated: </label> <br>
+        <input id="toTranslate" type="text" name="input" value="Rhombus">
+        <input type="submit" value="Translate!">
+    </form>
+
+    <p id="t"></p>
+
+    <script type="text/javascript">
+        var toTranslate = document.getElementsByName("trans")[0].value;
+    </script>
+
+    <a href="#" onclick="translate(toTranslate)">
+        Translate
+    </a>  
+    <script src="translator.js" type="text/javascript">
+    </script>
+
+</body>
+
+</html>
